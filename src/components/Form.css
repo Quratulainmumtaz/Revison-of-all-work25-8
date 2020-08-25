@@ -1,0 +1,15 @@
+.Form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+}
+input[type=text], select,textarea  {
+    width: 100%;
+    padding: 12px 2px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

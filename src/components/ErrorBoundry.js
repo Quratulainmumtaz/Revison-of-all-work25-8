@@ -1,0 +1,23 @@
+import React, { Component } from 'react';
+
+class ErrorBoundry extends Component{
+    state={
+        hasError:false
+    }
+    static getDerivedStateFromError(error) {
+        // Update state so the next render will show the fallback UI.
+        return { hasError: true };
+      }
+      componentDidCatch(error, info){
+          console.log(error);
+          console.log(info);
+
+      }
+    render(){
+        if(this.state.hasError){
+            return <h1>Some thing went wrong !</h1>
+        }
+        return this.props.children
+    }
+}
+export default ErrorBoundry;
